@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   appName = 'Angular Playground';
   name = 'Rubem';
-  getName() {
-    return this.name
+  getName(name: string) {
+    alert(name)
   };
   object = {
     name: 'Lúcia',
