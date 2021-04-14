@@ -2,18 +2,24 @@
 <h1>{{ name }}</h1>
 <app-user-list></app-user-list>
 <app-signup></app-signup>
+<!-- Functions -->
 <button (click)="getName(name)">Get my name</button>
 <button (click)="myEvent('this is a click event')">Click me</button>
 <br />
 <br />
+<!-- Input Event -->
 <input type="text" #box (keyup)="myEvent(box.value)" />
 <br />
 <br />
 <input type="text" #boxblur (blur)="myEvent(boxblur.value)" />
+<!-- Mouse Event -->
 <h1 (mouseover)="myEvent('mouseover')" style="background-color: skyblue">
   Mouse over
 </h1>
 <h1 (mouseleave)="myEvent('mouseleave event')" style="background-color: red">
   Mouse leave
 </h1>
-
+<!-- Get TextBox Value -->
+<input type="text" #textbox />
+<button (click)="getValue(textbox.value)">Get Value from input</button>
+<h2>{{ currentVal }}</h2>
