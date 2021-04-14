@@ -17,4 +17,7 @@ export class AppComponent {
   };
   array = ['Rubem', 'Gabriel', 'Lúcia'];
   siteUrl = window.location.href
+  myEvent(event: any){
+    console.warn(event)
+  }
 }

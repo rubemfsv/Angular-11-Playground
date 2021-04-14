@@ -3,3 +3,17 @@
 <app-user-list></app-user-list>
 <app-signup></app-signup>
 <button (click)="getName(name)">Get my name</button>
+<button (click)="myEvent('this is a click event')">Click me</button>
+<br />
+<br />
+<input type="text" #box (keyup)="myEvent(box.value)" />
+<br />
+<br />
+<input type="text" #boxblur (blur)="myEvent(boxblur.value)" />
+<h1 (mouseover)="myEvent('mouseover')" style="background-color: skyblue">
+  Mouse over
+</h1>
+<h1 (mouseleave)="myEvent('mouseleave event')" style="background-color: red">
+  Mouse leave
+</h1>
+
