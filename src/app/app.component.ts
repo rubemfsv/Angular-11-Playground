@@ -25,4 +25,8 @@ export class AppComponent {
     console.warn(val)
     this.currentVal = val;
   }
+  disabledBox = true
+  enableBox() {
+    this.disabledBox = false;
+  }
 }

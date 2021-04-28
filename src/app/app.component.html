@@ -23,3 +23,10 @@
 <input type="text" #textbox />
 <button (click)="getValue(textbox.value)">Get Value from input</button>
 <h2>{{ currentVal }}</h2>
+
+<!-- Property Binding -->
+<input type="text" [disabled]="disabledBox" [value]="name" />
+<br />
+<input type="text" disabled={{disabledBox}} value="{{ name }}" />
+<br />
+<button (click)="enableBox()">Enable TextBox</button>
