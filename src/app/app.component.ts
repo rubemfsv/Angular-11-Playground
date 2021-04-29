@@ -29,4 +29,6 @@ export class AppComponent {
   enableBox() {
     this.disabledBox = false;
   }
+  show = "red"
+  color = "blue"
 }
