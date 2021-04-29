@@ -31,4 +31,27 @@ export class AppComponent {
   }
   show = "red"
   color = "blue"
+  data = ['Rubem', 'Duda', 'Mateus', 'Mi']
+  data_object = [
+    {
+      name: 'Rubem',
+      age: '25',
+      email: 'abc@email.com'
+    },
+    {
+      name: 'Duda',
+      age: '21',
+      email: 'abc@email.com'
+    },
+    {
+      name: 'Mi',
+      age: '19',
+      email: 'abc@email.com'
+    },
+    {
+      name: 'Mateus',
+      age: '24',
+      email: 'abc@email.com'
+    },
+  ]
 }
